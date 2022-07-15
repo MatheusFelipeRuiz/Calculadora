@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="src/ico/favicon.ico" type="image/x-icon">
+    <script src="script/index.js" defer></script>
+    <link rel="stylesheet" href="style/index.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <main class="calculadora container">
+        <section class="resultado container">
+            <section class="node"></section>
+            <input type="text" name="" id="result" readonly>
+        </section>
+
+        <div class="teclas container"> <!-- Para selecionar uma class no CSS com espaço entre duas palavras, basta colocar a última palavra-->
+            <input type="button" value="^" onclick="botao('**')">
+            <input type="button" value="DEL" id="del" onclick="retirar()">
+            <input type="button" value="%" onclick="botao(value)">
+            <input type="button" value="C" oncanplay="limpar()">
+            <input type="button" value="7" onclick="botao(value)">
+            <input type="button" value="8" onclick="botao(value)">
+            <input type="button" value="9" onclick="botao(value)">
+            <input 
+                type="button" 
+                value="x"
+                onclick="botao('*')"
+                class="operadores_basicos">
+            <input type="button" value="4" onclick="botao(value)">
+            <input type="button" value="5" onclick="botao(value)">
+            <input type="button" value="6" onclick="botao(value)">
+            <input 
+                type="button" 
+                value="-"
+                onclick="botao(value)"
+                class="operadores_basicos">
+            <input type="button" value="1" onclick="botao(value)">
+            <input type="button" value="2" onclick="botao(value)">
+            <input type="button" value="3" onclick="botao(value)">
+            <input 
+            type="button" 
+            value="/"
+            onclick="botao(value)"
+            class="operadores_basicos">
+            <input type="button" value="0" onclick="botao(value)">
+            <input type="button" value="." onclick="botao(value)">
+            <input type="button" value="=" id="igual" onclick="calc()">
+            <input 
+                type="button" 
+                value="+"
+                onclick="botao(value)"
+                class="operadores_basicos">
+        </div>
+    </main>
+</body>
+</html>
